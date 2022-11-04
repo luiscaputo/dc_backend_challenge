@@ -3,13 +3,13 @@
 namespace App\Repositories;
 
 use App\Interfaces\IProductsRepository;
-use App\Models\Products;
+use App\Models\Product;
 
 class ProductRepository implements IProductsRepository
 {
   private $product;
 
-  public function __construct(Products $product)
+  public function __construct(Product $product)
   {
     $this->product = $product;
   }
