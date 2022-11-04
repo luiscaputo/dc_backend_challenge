@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProviderController;
+use App\Http\Controllers\SaleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -43,3 +44,10 @@ Route::get('/products/{id}', [ProductController::class, 'show']);
 Route::post('/products', [ProductController::class, 'store']);
 Route::put('/products/{id}', [ProductController::class, 'update']);
 Route::delete('/products/{id}', [ProductController::class, 'destroy']);
+
+// Sales routes
+Route::get('/sales', [SaleController::class, 'index']);
+Route::get('/sales/{id}', [SaleController::class, 'show']);
+Route::post('/sales', [SaleController::class, 'store']);
+Route::put('/sales/{id}', [SaleController::class, 'update']);
+Route::delete('/sales/{id}', [SaleController::class, 'destroy']);
