@@ -83,7 +83,7 @@ class ProductController extends Controller
   public function update(ProductRequest $request, $id)
   {
     try {
-      $product = $this->service->update($request->all(), $id);
+      $product = $this->service->update($request, $id);
       if ($product == false) {
         return response()->json([
           'success' => true,
