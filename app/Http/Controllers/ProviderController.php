@@ -6,7 +6,6 @@ use App\Http\Requests\ProviderRequest;
 use App\Services\ProviderServices;
 use Exception;
 use Symfony\Component\HttpFoundation\Response;
-use Illuminate\Support\Facades\Validator;
 
 
 class ProviderController extends Controller
