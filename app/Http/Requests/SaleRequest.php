@@ -24,12 +24,11 @@ class SaleRequest extends FormRequest
   public function rules()
   {
     return [
-      'client_name' => 'required|string',
-      'description' => 'nullable',
-      'phone' => 'nullable|string',
-      'quantity' => 'required|integer',
-      'amount' => 'required|numeric',
-      'product_id' => 'integer|products,id',
+      // 'client_name' => 'required|string',
+      // 'description' => 'nullable',
+      // 'phone' => 'nullable|string',
+      // 'quantity' => 'required|integer',
+      // 'product_id' => 'integer|products,id',
     ];
   }
 }
